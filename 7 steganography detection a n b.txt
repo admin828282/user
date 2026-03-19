@@ -1,0 +1,111 @@
+Practical No: 07
+
+Aim:
+To detect hidden information or files within a digital image using steganography techniques and extract the hidden content.
+
+
+A. USING STEGANPEG
+----------------------------------------
+Method: Using SteganPEG Software
+----------------------------------------
+
+Part A: Embedding (Hiding Data)
+
+Steps:
+
+1. Open SteganPEG software.
+
+2. Click on "Add Files" and select the text file (e.g., doc.txt).
+
+3. Enter a password (e.g., 1234).
+
+4. Select a JPEG image file (e.g., img.jpg).
+
+5. Click on "Save Stegged Image".
+
+6. Choose a location and save the file as "steg.jpg".
+
+7. Click on "Go" to start the embedding process.
+
+8. A new steganographic image (steg.jpg) will be created.
+
+----------------------------------------
+Part B: Extraction (Retrieving Data)
+
+Steps:
+
+1. Open SteganPEG software.
+
+2. Click on "Read Files from a JPEG Image".
+
+3. Browse and select the stegged image (steg.jpg).
+
+4. Enter the password used during embedding.
+
+5. Click on "Go".
+
+6. The hidden file (doc.txt) will be displayed.
+
+7. Select the file and click on "Save Selected".
+
+8. Choose a location and save the file.
+
+9. Open the extracted file to view the hidden content.
+
+----------------------------------------
+
+Result:
+The hidden data was successfully embedded into and extracted from an image using SteganPEG software.
+
+Conclusion:
+SteganPEG allows secure embedding and extraction of hidden data within images using password protection.
+
+B. USING CMD AND WINRAR
+----------------------------------------
+Part A: Embedding (Using WinRAR and Command Prompt)
+----------------------------------------
+
+Steps:
+
+1. Create a text file (e.g., doc.txt) containing the message.
+
+2. Right-click on the text file and select "Add to archive" to create a compressed file (doc.rar).
+
+3. Select an image file (e.g., img.jpg).
+
+4. Place both files (img.jpg and doc.rar) in the same folder.
+
+5. Open Command Prompt in that folder.
+
+6. Type the following command:
+   copy /b img.jpg + doc.rar steg.jpg
+
+7. A new image file named "steg.jpg" will be created.
+
+----------------------------------------
+Part B: Extraction (Using WinRAR)
+----------------------------------------
+
+Steps:
+
+1. Open WinRAR software.
+
+2. Browse to the folder containing "steg.jpg".
+
+3. Double-click on "steg.jpg" in WinRAR.
+
+4. The hidden file (doc.txt) will be displayed.
+
+5. Select the file and click "Extract To".
+
+6. Choose a location and click OK.
+
+7. Open the extracted file to view the hidden message.
+
+----------------------------------------
+
+Result:
+The hidden file was successfully embedded into an image and later extracted using steganography techniques.
+
+Conclusion:
+Steganography can be used to hide data inside images, and tools like WinRAR and Command Prompt can be used to embed and extract hidden information.

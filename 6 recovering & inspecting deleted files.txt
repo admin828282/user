@@ -1,0 +1,83 @@
+Aim:
+Recovering and Inspecting Deleted Files
+
+Objectives:
+
+* To check for deleted files
+* To recover deleted files
+* To analyze and inspect the recovered files
+* To perform recovery using Autopsy and Command Line
+
+---
+
+Procedure:
+
+Step 1:
+Install Autopsy.
+Go to CF folder → CF_SOFTWARES_EXAM → Double click on Autopsy setup file to install.
+
+Step 2:
+Open Autopsy and click on "New Case".
+
+Step 3:
+Enter Case Information and Optional Information.
+Create a new folder to store all case-related files.
+Click on Finish.
+
+Step 4:
+In Add Data Source window:
+Select "Disk Image or VM File"
+Click Next
+Browse and select the .img file (disk image of pendrive)
+Click Next → Finish
+
+Step 5:
+Autopsy will load and display the main interface.
+
+Step 6:
+Navigate through the file system tree.
+View all existing and previously stored files.
+
+Step 7:
+Click on "Deleted Files".
+View the list of deleted files.
+Right-click on any file → Click "Extract"
+Choose location to save the recovered file.
+
+Step 8:
+Open the extracted file and analyze its contents.
+
+Step 9:
+Generate Report:
+Go to Tools → Generate Report
+Select format (Excel/HTML)
+View summary and detailed sheets in the report.
+
+---
+
+Command Line Method:
+
+Step 10:
+Open Command Prompt as Administrator.
+
+Run:
+chkdsk D: /f
+
+(This fixes disk errors and may recover lost file entries)
+
+Step 11:
+List all files including hidden/system files:
+
+dir /a D:\
+
+(This displays all files and possible deleted entries)
+
+---
+
+Result:
+Deleted files were successfully identified, recovered, and analyzed using Autopsy and command-line tools.
+
+---
+
+Conclusion:
+Deleted files are not permanently erased from storage. Their references are removed, but actual data remains until overwritten. Autopsy helps recover such data effectively.

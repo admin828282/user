@@ -1,0 +1,54 @@
+Aim:
+To perform email forensic analysis using FTK by creating a case, adding email evidence, and extracting relevant information.
+
+Steps:
+
+1. Open FTK (Forensic Toolkit).
+
+2. Click on File → New Case.
+
+3. Enter case details such as case name, case number, path, and investigator name. Click Next.
+
+4. Enter examiner details such as organization name, examiner name, and email. Click Next.
+
+5. In Case Log options, select All Events and click Next.
+
+6. In Refine Case settings:
+   - Select Email Emphasis.
+   - Set Deletion Status: Either
+   - Set Encryption Status: Either
+   - Set Email Status: From Email
+   - Select all file types except executables and folders.
+   Click Next.
+
+7. In Refine Index settings, keep default options and click Next.
+
+8. Select evidence type as Individual File and click Next.
+
+9. Browse and select the email file (.pst or .eml) and click Open.
+
+10. Enter evidence information such as display name and click OK.
+
+11. Click Finish to complete case setup.
+
+12. Wait for FTK to process and index the email file.
+
+13. Select the email evidence from the Evidence Tree.
+
+14. View the list of extracted emails.
+
+15. Select any email to analyze its details such as sender, receiver, subject, and date/time.
+
+16. View email header information.
+
+17. Right-click on the email and select Export Files.
+
+18. Choose destination path and click OK.
+
+19. Open the exported file to view detailed information.
+
+Result:
+Email evidence was successfully analyzed and important information such as headers, messages, and metadata was extracted.
+
+Conclusion:
+FTK helps in performing email forensic analysis by extracting and analyzing email data for investigation purposes.

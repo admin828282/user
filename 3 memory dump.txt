@@ -1,0 +1,29 @@
+Aim:
+To analyze the memory dump of a running computer system and extract volatile data such as open processes, network connections, and registry information.
+
+Steps:
+
+1. Go to the CF Software folder and open the Sysinternals folder.
+
+2. Locate the Procmon (Process Monitor) application, right-click on it, and select "Run as Administrator".
+
+3. Observe the real-time system activity including running processes, file access, and registry operations.
+
+4. In the Sysinternals folder, locate the TCPView zip file and extract it.
+
+5. Open the TCPView application after extraction.
+
+6. Observe the list of active TCP and UDP connections along with local and remote IP addresses and ports.
+
+7. Click on the Start menu and type "regedit", then open the Registry Editor.
+
+8. Navigate to the following path:
+   HKEY_CURRENT_CONFIG\System\CurrentControlSet\SERVICES\TSDDD\DEVICE0
+
+9. Observe the registry values and system configuration details.
+
+Result:
+The volatile data of the system including running processes, network connections, and registry information was successfully analyzed using Sysinternals tools.
+
+Conclusion:
+This practical helps in understanding how to capture and analyze live system data, which is important in digital forensic investigations as volatile data is lost after system shutdown.

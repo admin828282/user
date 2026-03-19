@@ -1,0 +1,126 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical No. 02
+Aim: Data Acquisition
+Perform data acquisition using:
+-	USB Write Blocker + Encase Imager
+-	SATA Write Blocker + Encase Imager
+-	Falcon Imaging Devices
+
+Step 1: Open Registry
+ 
+Step 2: This will open the Registry Editor. Navigate to following key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+ 
+Step 3: Right Click on the Control key in the left panel. Select, select new > Key
+ 
+Step 4: Name it as StorageDevicePolicy
+  
+Step 5: Right click on StorageDevicePolicy in left panel select new < DWORD value and name it as WriteProtect
+ 
+Step 6: Double Click on WriteProtect and then change the value data from 0 to 1
+ 
+Step 7: The new setting takes effect immediately. Every user who tries to copy/ move data to USB devices or format USB drive will get the error message
+ 
+Step 8: We can only open the file in the USB drive for reading but it’s not allowed to modify and save the changes back to USB drive.
+ 
+Creating a USB Write Blocker Forensic Image using EnCase Imager.
+I.  Creating a forensic image
+II.Check integrity of data
+III.Analyze forensic image
+I. Creating a USB Forensic Image
+
+Step 01: Launch EnCase and Create a New Case.
+·	Open EnCase Forensic.
+·	Click File > New.
+·	Enter Case Information (Name, Number, Examiner) and click Finish.
+
+Step 02: Add the Source Drive.
+·	In the Left "Tree" Pane, right-click on Entries.
+·	Select Add Device.
+·	Locate and select the checkbox for your suspect drive (connected via a write-blocker).
+·	Click OK. The drive will appear in the Tree Pane.
+
+Step 03: Start the Acquisition.
+·	Right-click on the suspect drive in the Tree Pane.
+·	Select Acquire... from the menu.
+
+Step 04: Configure Image Settings.
+·	Destination: Browse to your destination folder.
+·	File Name: Enter a name for the image file (e.g., MyEvidence).
+·	Format: Select Expert Witness Format (Ex01).
+·	Segment Size: Set a size (e.g., 2 GB).
+·	Compression: Select Fast.
+·	Checksum: Ensure MD5 and SHA-1 are selected.
+·	Click Start.
+
+Step 05: Imaging Process.
+·	EnCase will begin acquiring the image.
+·	A progress window will show the status, time elapsed, and the calculated hash values.
+
+Step 06: Completion.
+·	When complete, a message will show "Acquire is complete."
+·	The MD5 and SHA-1 hashes are displayed and automatically verified against the source.
+
+II. Check Integrity of Data
+·	The integrity check is automatic in EnCase.
+·	After acquisition, EnCase compares the hash (MD5/SHA-1) of the source device with the hash of the created image file.
+·	A confirmation message verifies the hashes match, proving the image is a perfect, forensically sound copy.
+
+III. Analyze USB Forensic Image
+Step 01: Add the Image to a Case.
+·	Go to File > Add Evidence Item....
+·	Select Image File and click Next.
+·	Browse to and select your .Ex01 image file. – Click finish.
+
+Step 02: Explore the Evidence.
+·	The image file is now loaded in the Tree Pane.
+·	You can browse the file system, view files, recover deleted data, and analyze the evidence.
+Done!

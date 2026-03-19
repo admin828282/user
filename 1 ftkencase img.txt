@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical No: 01
+Aim: Creating a Forensic Image using FTK Image/Encase Imager
+
+Step 1: Open AccessData FTK Imager application 
+ 
+Step 2: Click File and Create Disk Image 
+
+Step 3: Select Logical Dive and then click next
+ 
+Step 4: In the Source Dive select your connected External Device (eg. Pen drive) and then click finish 
+ 
+Step 5: Click on add button and then select Raw (dd) and click next
+ 
+Step 6: Write all the required details for the Evidence Information and then click next
+ 
+Step 7: Create new folder and add its destination path in the Image destination folder also give filename in the next column  and then click finish 
+
+Step 8: This window will occure and your image creation process will be started 
+ 
+Step 9: After creation done click close 
+ 
+Step 10:  Then it will generate summary
+ 
+Step 11: Open you’re newly created Folder and check whether the image is created.
+ 
+Step 12: Create disk image and select image file and then click next
+ 
+Step 13: Select previously created image and add its path click finish 
+
+Step 14: Click add and select the folder path and click start
+ 
+Step 15: Write all the required details and click next
+ 
+Step 16: Browse and select the folder path name it and click start
+ 
+Step 17 : now select the evidence tree and analyze the image file.

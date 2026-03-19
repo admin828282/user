@@ -1,0 +1,91 @@
+Aim:
+Web Browser Forensics
+
+Objectives:
+
+1. To analyze browser artifacts such as history, bookmarks, and download records.
+2. To analyze cache and cookies data to reconstruct user browsing activity.
+3. To extract and interpret timestamps to determine last internet activity.
+
+
+
+Software Required:
+
+* BrowserHistoryExaminer v1.9.0
+
+
+
+Procedure:
+
+Step 1:
+Install "BrowserHistoryExaminer_v1.9.0" from CF_SOFTWARES_EXAM folder.
+After installation, open the application as Administrator.
+Click on "Continue Trial".
+
+
+
+Step 2:
+Click on File → Capture History.
+Select the first option (Capture History from local system).
+Click Next.
+Choose destination folder to save captured data.
+Click on Capture.
+
+---
+
+Step 3:
+After capture is complete, a dialog box will appear.
+Click "Yes".
+The extracted browser history records will be displayed.
+
+---
+
+Step 4:
+Analyze the following artifacts:
+
+* Browsing History (visited websites)
+* Bookmarks (saved links)
+* Download Records (files downloaded)
+* Cookies (user sessions and tracking data)
+* Cache (temporary stored web data)
+
+---
+
+Step 5:
+To generate report:
+Go to File → Report → Add Records to Report.
+Select desired records.
+
+---
+
+Step 6:
+Go to File → Report → Save as PDF.
+The report will contain all selected browser artifacts.
+
+---
+
+Step 7:
+Analyze timestamps in the report:
+
+* Identify last visited website
+* Determine browsing activity timeline
+* Interpret user behavior based on timestamps
+
+
+Result:
+Browser artifacts including history, cookies, cache, and download records were successfully extracted and analyzed to reconstruct user browsing activity.
+
+
+
+Conclusion:
+Web browser forensics helps in identifying user activities by analyzing stored artifacts such as history, cookies, cache, and timestamps, which provide valuable evidence in digital investigations.
+
+---
+
+Viva Points:
+
+* Browser history stores visited websites
+* Cookies store session and tracking data
+* Cache stores temporary website data
+* Timestamps help identify user activity timeline
+* Browser forensics is useful in cyber investigations

@@ -1,0 +1,108 @@
+
+Aim:
+Capturing and analyzing network packets using Wireshark.
+
+Objectives:
+i) Identification of live network
+ii) Capture packets
+iii) Analyze captured packets
+iv) Apply display filters
+
+Steps:
+
+1. Open Wireshark application.
+
+2. Select the active network interface (Wi-Fi/Ethernet) to identify the live network.
+
+3. Click on "Start Capturing Packets".
+
+4. Allow packets to capture for a few seconds.
+
+5. Click on "Stop" to stop packet capture.
+
+6. Analyze captured packets by selecting individual packets and observing details such as:
+   - Source IP
+   - Destination IP
+   - Protocol
+   - Packet length
+
+7. Apply display filters to analyze specific packets.
+
+Display Filters:
+
+1. Display packets based on specific IP address: 
+find IP from network settings and put that
+   ip.addr == 192.0.2.1
+
+2. Display packets from a specific source IP: 
+nslookup google.com (type in cmd and get that IP)
+   ip.src == 192.168.10.28
+
+3. Display packets to a specific destination IP:
+   ip.dst == 192.168.10.28
+
+4. Display HTTP protocol packets:
+   http
+
+5. Display HTTP request packets:
+   http.request
+
+6. Display TCP protocol packets:
+   tcp
+
+7. Display successful HTTP responses:
+   http.response.code == 200
+
+8. Display packets using port 80 or 443:
+   tcp.port == 80 || udp.port == 443
+
+9. Display packets containing keyword "facebook":
+   tcp contains "facebook/google"
+
+
+
+Result:
+Packets were successfully captured and analyzed using Wireshark. Various filters were applied to extract relevant network information.
+
+Conclusion:
+Wireshark helps in monitoring and analyzing network traffic. Display filters allow efficient extraction of specific data, which is useful in network analysis and digital forensics. 
+
+###Case study
+Q)Analyze the packets provided in lab and solve the question using wireshark
+
+1. What web server software issued bygo.microsoft.com? What web server software issued by www.snopes.com
+Analysis- The domain name be found from host header so we will set host header so we will set host header column where we will see all domain name. 
+
+Step 1: Select any HTTP request and expand the hypertext Tranfer Protocol Right click on host and select apply as column. 
+
+Step 2: Then it will create column for host and it will show www.snopes.com in that column . right click on it follow > TCP Stream.
+
+2. About what cell phone problem is the client concerned?
+Analysis – Client talking about cell so we search for cell keyword in whole packets. We will use regular express for searching the cell keyword. Apply frame matches “(?)cell”.
+In the search frame type frame matches “microsoft”
+Step 1: Type filter  frame matches "(?) cell”
+ 
+3. a) According to http, what data will TCP show?
+Analysis - As we did in the last challenge, we will apply a regular express filter for the Google keyword. Apply frame matched “http”.
+Filter: frame matches “(?) http”
+ 
+b) According to Zillow, what instrument willryan learn to play?
+Filter: frame matches"(?)zillow"
+Analysis - 
+Step 1: Type the following filter, then it will show only one packet select it and expand the TCP > right click on it. Protocol preferences > tick “allow subdissector to reassemble TCP streams.
+ 
+Step 2: Then again right click on TCP > Export objects > HTTP and save it new folder.
+ 
+4. How may web servers are running Microsoft/Apache?
+Step 1: filter http.response
+ 
+Step 2: Same right click http apply as column, it will show which ever is running Microsoft / apache and all. Then type filter http.server contains "Microsoft".
+ 
+Step 3: Right click on any http > Endpoint
+ 
+Step 4: Select ipv4.
+ 
+5. What hosts (IP addresses) think that jokes are more entertaining when they are explained?
+Apply filter frame matches "(?)jokes".
+Analysis - 
+Step 1: filter > frame matches "(?)jokes”.then check the column of server , it will show the output as “jokes are better explained”.

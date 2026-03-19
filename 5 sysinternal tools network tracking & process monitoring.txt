@@ -1,0 +1,37 @@
+Aim:
+Using Sysinternals tools for network tracking and process monitoring.
+
+Steps:
+
+1. Open the Sysinternals Suite folder and check the availability of various tools.
+
+2. Monitor Live Processes - PROCMON
+   - Open Procmon (Process Monitor) from the Sysinternals folder.
+   - Run as Administrator.
+   - Observe real-time process, file system, and registry activity.
+
+3. Capture RAM - RAMMap
+   - Open RAMMap from the Sysinternals folder.
+   - Analyze memory usage including active, standby, and free memory.
+
+4. Capture TCP/UDP Packets - TCP view
+   - Open TCPView from the Sysinternals folder.
+   - Observe active network connections, ports, and processes.
+
+5. Monitor Hard Disk - DiskMon
+   - Open DiskMon.
+   - Observe real-time disk read/write activity.
+
+6. Monitor Virtual Memory - VMMap
+   - Open VMMap.
+   - Analyze virtual and physical memory usage of a process.
+
+7. Monitor Cache Memory - CacheSet
+   - Open CacheSet.
+   - Observe and manage system cache settings.
+
+Result:
+Sysinternals tools were successfully used to monitor system processes, memory usage, network activity, and disk operations.
+
+Conclusion:
+Sysinternals tools provide detailed insights into system internals, helping in process monitoring, memory analysis, and network tracking for forensic and troubleshooting purposes.
